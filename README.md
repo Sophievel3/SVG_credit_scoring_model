@@ -66,7 +66,7 @@ temps d'utilisation), le service gratuit étant limité à:
 
 
 J'ai dû, dans la version du 'Dashboard cloud' (code: "P7_Sofia_Velasco_1_Dashboard_Cloud.py" et 
-URL:https://sophievel2-svg-credit-p7-sofia-velasco-1-dashboard-cloud-gjc3bm.streamlit.app/):
+URL:https://sophievel3-svg-credit-p7-sofia-velasco-1-dashboard-cloud-49prj2.streamlit.app/):
 
 - faire les tests sur une base de données bien réduite (que quelques lignes et uniquement de la base test, 
   afin d'éviter les erreurs de mémoire, erreur H12).
