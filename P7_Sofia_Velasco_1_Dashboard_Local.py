@@ -39,9 +39,9 @@ if st.button("Explain Results"):
     with st.spinner('Calculating...'):
         
         #Appel aux url de Flask.
-        data_c= requests.get("http://192.168.43.52:81/app/scoring_cust/?SK_ID_CURR="+input_text).json()
-        #data_c2= requests.get("http://192.168.43.52:81/app/feat_imp_local/?SK_ID_CURR=" + input_text)
-        data_c3= requests.get("http://192.168.43.52:81/app/feat_imp_global").json()
+        data_c= requests.get("http://192.168.0.108:81/app/scoring_cust/?SK_ID_CURR="+input_text).json()
+        #data_c2= requests.get("http://192.168.0.108:81/app/feat_imp_local/?SK_ID_CURR=" + input_text)
+        data_c3= requests.get("http://192.168.0.108:81/app/feat_imp_global").json()
         
         #Affichage du score du client.
         st.write(data_c)
@@ -50,5 +50,5 @@ if st.button("Explain Results"):
         st.write(data_c3)
 
         #Affichage des features importances locales pour le client.
-        components.iframe("http://192.168.43.52:81/app/feat_imp_local/?SK_ID_CURR=" + input_text, width=800, height=800, scrolling=True)
+        components.iframe("http://192.168.0.108:81/app/feat_imp_local/?SK_ID_CURR=" + input_text, width=800, height=800, scrolling=True)
 
