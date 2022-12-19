@@ -32,7 +32,7 @@ import dill
 #D.1 Base de données entière suite à tous ces traînements.
 
 zf=zipfile.ZipFile('Base_complete.zip')
-Base_complete=pd.read_csv(zf.open('Base_complete.csv'), sep=',', low_memory=False)
+Base_complete=pd.read_csv(zf.open('Base_complete.csv'), sep=',', float_precision='round_trip')
 
 
 
